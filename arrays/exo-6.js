@@ -13,7 +13,9 @@ function countOccurences(arr, value) {
 function mostFrequent(arr) {
     let maxOccurence = 0
     let result = ''
+    console.log(arr)
     arr.forEach(fruit => {
+        const count = countOccurences(arr, fruit)
         if(count > maxOccurence) {
             result = fruit 
             maxOccurence = count
