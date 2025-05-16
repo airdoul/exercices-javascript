@@ -52,11 +52,19 @@ input2.addEventListener("blur", function() {
     input2.style.border = "1px solid #ccc" 
 })
 
-button.addEventListener("click", function(){
+input.addEventListener("keyup", calcul)
+input2.addEventListener("keyup", calcul)
+
+button.addEventListener("click", calcul)
+
+
+function calcul(){
     const num1 = parseFloat(input.value)
     const num2 = parseFloat(input2.value)
+    if (isNaN(num1) || isNaN(num2)){
+        return 
+    }
 
     const result = num1 + num2
     message.textContent = "Résultat : " + result
-    }
-)
+}

@@ -22,7 +22,7 @@ const country = [
     "Tunisie", "Turkménistan", "Turquie", "Tuvalu", "Ukraine", "Uruguay", "Vanuatu", "Vatican", "Venezuela", "Vietnam",
     "Yémen", "Zambie", "Zimbabwe"
 ]
-// const listePays = document.getElementById(countryList)
+
 const ul = document.createElement("ul")
 ul.id = "contryList"
 
